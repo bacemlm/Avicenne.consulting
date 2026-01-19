@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Travaillez chez Avicenne</title>
+</head>
+<body>
+    <div id="page-content">
+        <div id="loader">
+            <img src="images/logo.jpeg" alt="Company Logo" class="logo">
+            <div class="loading-bar">
+                <span></span>
+            </div>
+        </div>
+        <div class="dropdown-fixed">
+            <i class="fa-solid fa-calendar-days"></i>
+            <div class="dropdown-content">
+                <p><a href="booking.html">Prendre RDV</a></p>
+            </div>
+        </div>
+        <div class="return-up">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+        <header>
+            <a href="index.html"><img src="images/logo.jpeg" alt="logo" id="logo"></a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="nav">
+                <a href="index.html#home" class="active">Accueil</a>
+                <a href="index.html#about">A Propos</a>
+                <a href="index.html#services">Services</a>
+                <a href="#contact">Contactez-nous</a>
+                <div class="dropdown">
+                    <div class="dropdown-btn">Carriere <i class="fa-solid fa-angle-down"></i></div>
+                    <div class="space"></div>
+                    <div class="dropdown-menu">
+                        <div><a href="">Pourquoi nous</a></div>
+                        <div><a href="offres.html">Nos offres</a></div>
+                        <div><a href="candidat.html">Applications Ouvertes</a></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="travail">
+            <div class="circle"></div>
+            <img src="images/workman.png" alt="">
+            <div class="rate">
+                <div class="employes">
+                    <p>+10 employés</p>
+                </div>
+                <div class="exp">
+                    <p>+3 ans d'expérience</p>
+                </div>
+                <div class="clients">
+                    <p>+4 Clients</p>
+                </div>
+            </div>
+            <div class="desc">
+                <h2>Pourquoi nous choisir ?</h2>
+                <p>Chez nous, chaque jour est une nouvelle opportunité de grandir et d’innover. Prêt(e) à rejoindre une entreprise en pleine croissance, tournée vers l’avenir ?</p>
+                <a href="offres.html" class="btn">Voir nos offres d'emploi</a>
+            </div>
+        </section>
+        <section id="act">
+            <div class="act">
+                <h2>Nos Actualités</h2>
+                <p>Entre innovations technologiques, nouveaux partenariats, déploiements réussis et événements marquants, nous partageons avec vous les temps forts qui façonnent notre aventure.</p>
+                <a href="https://www.linkedin.com/company/avicenne-consulting/" target="_blank" class="btn">Voir nos actualités</a>
+            </div>
+            <div class="rectangle1"></div>
+            <div class="rectangle2"></div>
+        </section>
+        <section id="contact">
+            <div class="rectangle"></div>
+            <div class="text">
+                <h2>Contactez-nous</h2>
+                <p>Vous avez des questions ou souhaitez en savoir plus sur nos services ? N'hésitez pas à nous contacter !</p>
+            </div>
+            <form action="https://formspree.io/f/mojjqjqg" method="post">
+                <label for="name">Nom et Prénom:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+                <button type="submit" class="btn" onclick="return controles()">Envoyer</button>
+            </form>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Avicenne Consulting</h3>
+                    <p>Externalisation, maintenance, support</p>
+                    <p></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html#home">Accueil</a></li>
+                        <li><a href="index.html#about">À Propos</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#team">Equipes</a></li>
+                        <li><a href="#contact">Contactez-nous</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>Email: balighabichou@avicenneconsulting.com</li>
+                        <li>Téléphone: +216 27 636 002</li>
+                        <li>Location: Zarzis, Medenine, Tunisie</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>S'abonner</h4>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/avicenne-consulting/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2026 Avicenne Consulting. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </div>
+    <div class="popup-travail" id="popup1">
+            <img src="images/error.png" alt="error" id="popup-image">
+            <h2>ERREUR</h2>
+            <p id="popup-txt">Veuillez entrer un nom valide (au moins 5 caractères et un espace).</p>
+            <button class="btn" onclick="closePopup('popup1')">Fermer</button>
+        </div>
+        <div class="popup-travail" id="popup2">
+            <img src="images/done.png" alt="error" id="popup-image">
+            <h2>MESSAGE ENVOYÉ</h2>
+            <p>Votre message a été envoyé avec succès.</p>
+            <button class="btn" onclick="closePopup('popup2')">Fermer</button>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Prener un Rendez-vous</title>
+</head>
+<body onload="booking()">
+    <header class="candidat-header">
+        <a href="index.html"><i class="fa-solid fa-circle-left"></i></a>
+        <img src="logo.jpeg" alt="logo" id="logo">
+    </header>
+    <div class="booking-content">
+        <div class="booking-circle"></div>
+        <div class="booking-text">
+            <h2>Prennez un Rendez-Vous</h2>
+            <p>Prendre un rendez-vous maintenant</p>
+        </div>
+        <div class="booking-container">
+            <div class="content">
+                <form class="booking-form" method="post" action="https://formspree.io/f/mojjqjqg">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <label for="notes">Message</label>
+                    <textarea id="notes" name="notes"></textarea>
+                    <button type="submit" class="btn">Prendre le RDV</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

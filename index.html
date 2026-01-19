@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Avicenne Consulting</title>
+</head>
+<body onload="type()">
+    <div id="page-content">
+        <div id="loader">
+            <img src="images/logo.jpeg" alt="Company Logo" class="logo">
+            <div class="loading-bar">
+                <span></span>
+            </div>
+        </div>
+        <div class="dropdown-fixed">
+            <i class="fa-solid fa-calendar-days"></i>
+            <div class="dropdown-content">
+                <p><a href="booking.html">Prendre RDV</a></p>
+            </div>
+        </div>
+        <div class="return-up">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+        <header>
+            <a href="#"><img src="images/logo.jpeg" alt="logo" id="logo"></a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="nav">
+                <a href="#" class="active">Accueil</a>
+                <a href="#about">A Propos</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contactez-nous</a>
+                <div class="dropdown">
+                    <div class="dropdown-btn">Carriere <i class="fa-solid fa-angle-down"></i></div>
+                    <div class="space"></div>
+                    <div class="dropdown-menu">
+                        <div><a href="travail.html">Pourquoi nous</a></div>
+                        <div><a href="offres.html">Nos offres</a></div>
+                        <div><a href="candidat.html">Applications Ouvertes</a></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="home">
+            <div class="home-content">
+                <div class="intro">
+                    <h1>Bienvenue chez <span class="multiple-text"></span></h1>
+                    <p>Votre partenaire de confiance en solutions de conseil.</p>
+                    <a href="#services" class="btn">Nos Projets</a>
+                </div>
+                <img src="images/home.png" alt="logo" id="home-image">
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-image">
+                <img src="images/logo.jpeg" alt="About Image" id="about-image">
+            </div>
+            <div class="content">
+                <h2>A Propos de Nous</h2>
+                <p>Notre équipe créative est constamment en train de réfléchir à de grandes idées, tout. le. temps.
+                Avec nos compétences combinées, vous obtenez une équipe capable de tout accomplir pour votre marque.</p>
+                <a href="https://www.linkedin.com/company/avicenne-consulting/" class="btn" target="_blank">En savoir plus</a>
+            </div>
+        </section>
+        <section id="services">
+            <h2>Nos Services</h2>
+            <p>Nous vous accompagnons dans la mise en place de solutions de haute qualité, avec une expertise solide en conseil, développement, et supervision technique. Nous assurons un service sur-mesure adapté aux besoins spécifiques de nos clients.</p>
+            <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-regular fa-lightbulb"></i>
+                        </div>
+                        <h3>Conseil et expertise</h3>
+                        <p>Nous offrons des services de conseil en amélioration continue et en développement de solutions sur-mesure. Nos experts vous aident à optimiser vos processus et à répondre aux défis techniques et stratégiques.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Centre de développement (PROJET / TMA)</h3>
+                        <p>Notre centre de développement prend en charge la gestion de projets et la Tierce Maintenance Applicative (TMA), en assurant la continuité et l'évolution de vos solutions IT avec efficacité et expertise.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <h3>Mise en place de processus de qualification (tests/ automatisation)</h3>
+                        <p>Nous mettons en œuvre des processus de qualification rigoureux, incluant des tests manuels et automatisés, pour garantir la qualité et la fiabilité de vos solutions logicielles tout au long du cycle de vie.</p>
+                    </div>
+                </div>
+        </section>
+        <section id="clients">
+            <h2>Nos Clients</h2>
+            <p>Nous ne construisons pas seulement des logiciels, nous construisons votre entreprise.</p>
+            <div class="clients-logos">
+                <img src="images/client1.png" alt="Client 1">
+                <img src="images/client2.png" alt="Client 2">
+                <img src="images/client3.png" alt="Client 3">
+                <img src="images/client4.png" alt="Client 4">
+            </div>
+        </section>
+        <section id="contact">
+            <div class="rectangle"></div>
+            <div class="text">
+                <h2>Contactez-Nous</h2>
+                <p>Vous avez des questions ou souhaitez en savoir plus sur nos services ? N'hésitez pas à nous contacter !</p>
+            </div>
+                <form action="https://formspree.io/f/mojjqjqg" method="post">
+                    <label for="name">Nom et Prénom:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                    <button type="submit" class="btn" onclick="return controles()">Envoyer</button>
+                </form>
+        </section>
+        <section id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6655.314438726292!2d11.111909452054794!3d33.484274116438336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2stn!4v1768381633502!5m2!1sfr!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Avicenne Consulting</h3>
+                    <p>Externalisation, maintenance, support</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#schedule">Equipes</a></li>
+                        <li><a href="#contact">Contactez-nous</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>Email: balighabichou@avicenneconsulting.com</li>
+                        <li>Téléphone: +216 27 636 002</li>
+                        <li>Location: Zarzis, Medenine, Tunisie</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>S'abonner</h4>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/avicenne-consulting/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2026 Avicenne Consulting. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </div>
+    <div class="popup" id="popup1">
+        <img src="images/error.png" alt="error" id="popup-image">
+        <h2>ERREUR</h2>
+        <p id="popup-txt">Veuillez entrer un nom valide (au moins 5 caractères et un espace).</p>
+        <button class="btn" onclick="closePopup('popup1')">Fermer</button>
+    </div>
+    <div class="popup" id="popup2">
+        <img src="images/done.png" alt="error" id="popup-image">
+        <h2>MESSAGE ENVOYÉ</h2>
+        <p>Votre message a été envoyé avec succès.</p>
+        <button class="btn" onclick="closePopup('popup2')">Fermer</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

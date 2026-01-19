@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Candidat Spontannée</title>
+</head>
+<body>
+    <header class="candidat-header">
+        <a href="index.html"><i class="fa-solid fa-circle-left"></i></a>
+        <img src="images/logo.jpeg" alt="logo" id="logo">
+    </header>
+    <div class="candidat">
+        <form action="https://formspree.io/f/mojjqjqg" method="post">
+            <h2>Applications Ouvertes</h2>
+            <p>Type d'emploi : Temps Plein</p>
+            <hr>
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom">
+            <label for="prenom">Prénom :</label>
+            <input type="text" name="prenom" id="prenom">
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email">
+            <label for="phone">Téléphone :</label>
+            <input type="tel" name="phone" id="phone">
+            <label for="address">Addresse :</label>
+            <input type="text" name="address" id="address">
+            <label for="ville">Ville :</label>
+            <input type="text" name="ville" id="ville">
+            <label for="pcode">Code Postale :</label>
+            <input type="text" name="pcode" id="pcode">
+            <label for="pays">Pays :</label>
+            <input type="text" name="pays" id="pays">
+            <hr>
+            <label for="cv">Votre CV :</label>
+            <input type="file" name="cv" id="cv" accept=".pdf,.doc,.docx">
+            <p class="form-help">PDF, DOC ou DOCX (max 5MB)</p>
+            <label for="cl">Cover Lettre :</label>
+            <input type="file" name="cl" id="cl" accept=".pdf,.doc,.docx">
+            <p class="form-help">PDF, DOC ou DOCX (max 5MB)</p>
+            <label for="salaire">Salaire Expecté:</label>
+            <input type="text" name="salaire">
+            <hr>
+            <label for="portfolio">Website, Blog ou Portfolio</label>
+            <input type="text" name="portfolio" id="portfolio">
+            <label for="linkedin">Profile LinkedIn</label>
+            <input type="text" name="linkedin" id="linkedin">
+            <label for="message">Quel type de poste recherchez-vous ?</label>
+            <textarea name="message" id="message"></textarea>
+            <hr>
+            <button type="reset">Annuler</button>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
